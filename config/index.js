@@ -1,3 +1,3 @@
-module.exports = {
-    SERVER_PORT: 8080
-};
+import * as routerPaths from './routerPaths';
+export const SERVER_PORT = 8080;
+export const RouterPaths = routerPaths;

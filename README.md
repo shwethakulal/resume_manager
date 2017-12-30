@@ -4,11 +4,14 @@ To maintain the users resumes.
 
 npm - Node Package Manager
 
-#To initialize package manager
+## To initialize package manager
 npm init
 
-#To install restify package
+## To install restify package
 npm install restify --save
 
-#To export variables from js file
-module.exports
+## To export variables from js file
+export
+
+## To run the project
+npm run start
