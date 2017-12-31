@@ -1,5 +1,8 @@
+import { getUserByUsername } from '../dao/userDao';
 
 export function getUserDetails(req, res, next) {
-    res.send('hello ' + req.params.userId);
-    next();
-  }
+  getUserByUsername(req.params.username, function (err, user) {
+    res.send(user);
+  });
+  next();
+}

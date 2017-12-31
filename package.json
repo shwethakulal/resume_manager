@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/shwethakulal/resume_manager#readme",
   "dependencies": {
+    "mongoose": "^5.0.0-rc0",
     "morgan": "^1.8.1",
     "restify": "^6.3.4"
   },
