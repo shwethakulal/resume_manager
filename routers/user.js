@@ -18,7 +18,7 @@ export function getAllUserDetails(req, res, next) {
 }
 
 export function insertUserDetails(req, res, next) {
-  insertNewUsers(req.body, function (err, users) {
+  insertNewUser(req.body, function (err, users) {
     res.send(users);
   });
  next();
