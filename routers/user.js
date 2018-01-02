@@ -1,4 +1,6 @@
-import { getUserByUsername,getAllUsers} from '../dao/userDao';
+import { getUserByUsername, getAllUsers, insertNewUsers } from '../dao/userDao';
+import mongoose from '../dao/mongoose';
+
 
 
 export function getUserDetails(req, res, next) {
@@ -8,9 +10,16 @@ export function getUserDetails(req, res, next) {
   next();
 }
 
-export function getAllUserDetails(req,res,next){
-  getAllUsers(function(err,users){
+export function getAllUserDetails(req, res, next) {
+  getAllUsers(function (err, users) {
     res.send(users);
   });
-next();
+  next();
+}
+
+export function insertUserDetails(req, res, next) {
+  insertNewUsers(req.body, function (err, users) {
+    res.send(users);
+  });
+ next();
 }
